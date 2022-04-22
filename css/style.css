@@ -1,0 +1,58 @@
+:root {
+    --primary-blue: #233bf5;
+    --white: #fff;
+}
+
+body,
+body * {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #d3e5fd;
+    display: flex;
+    justify-content: center;
+    color: var(--primary-blue);
+}
+
+.main-container {
+    background-color: var(--white);
+    padding: 20px 70px;
+}
+
+.touch-text {
+    font-weight: 50;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0px;
+}
+
+.input-field {
+    flex-grow: 1;
+}
+
+.input-field::placeholder {
+    color: var(--primary-blue);
+    opacity: 1;
+}
+
+.sub-button {
+    margin: auto;
+    background-color: var(--primary-blue);
+    color: var(--white);
+    border: 0;
+}
+
+.sub-button, .input-field::placeholder {
+    font-size: 18px;
+    font-weight: 200;
+}
