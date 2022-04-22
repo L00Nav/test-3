@@ -22,6 +22,8 @@ body {
 .main-container {
     background-color: var(--white);
     padding: 20px 70px;
+    width: 700px;
+    margin-top: 80px;
 }
 
 .touch-text {
@@ -33,26 +35,68 @@ body {
 .input-row {
     display: flex;
     justify-content: space-between;
-    margin: 15px 0px;
+    margin: 18px 0px;
+    gap: 18px;
+    flex-wrap: wrap;
 }
 
 .input-field {
+    color: var(--primary-blue);
     flex-grow: 1;
+    padding: 20px;
+    border-radius: 8px;
+    border: 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.row1 .input-field {
+    background-color: #e7e9fe;
+}
+
+.row2 .input-field {
+    background-color: #dce1ff;
+}
+
+.row3 .input-field {
+    background-color: #c7cdfd;
+}
+
+.row4 .input-field {
+    background-color: #a5b1fd;
+    line-height: 400%;
+}
+
+.row4 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row4 .input-field::placeholder {
+    align-items: flex-start;
 }
 
 .input-field::placeholder {
     color: var(--primary-blue);
     opacity: 1;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .sub-button {
     margin: auto;
+    padding: 15px 50px;
+    border-radius: 25px;
     background-color: var(--primary-blue);
     color: var(--white);
     border: 0;
 }
 
 .sub-button, .input-field::placeholder {
-    font-size: 18px;
-    font-weight: 200;
+    font-size: 16px;
+}
+
+.thanks-text {
+    opacity: 0;
+    color: #37c99c;
 }

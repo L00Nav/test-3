@@ -6,29 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script>
+        function submitButton()
+        {
+            document.getElementById("thanks").style.opacity = 1;
+        }
+    </script>
 </head>
 <body>
     <main class="main-container">
         <h1 class="touch-text">Get In Touch</h1>
-        <form class="reg-form">
-            <div class="input-row">
+        <form class="reg-form" onsubmit="return false">
+            <div class="input-row row1">
                 <input class="input-field" type="text" placeholder="First Name">
                 <input class="input-field" type="text" placeholder="Last Name">
             </div>
-            <div class="input-row">
+            <div class="input-row row2">
                 <input class="input-field" type="email" placeholder="Email">
                 <input class="input-field" type="tel" placeholder="Phone">
             </div>
-            <div class="input-row">
+            <div class="input-row row3">
                 <input class="input-field" type="text" placeholder="Address">
             </div>
-            <div class="input-row">
+            <div class="input-row row4">
                 <input class="input-field" type="text" placeholder="Type your message here">
             </div>
-            <div class="input-row button-row">
-                <input class="sub-button" type="submit" value="Submit">
+            <div class="input-row">
+                <input class="sub-button" onclick="submitButton()" type="submit" value="Submit">
             </div>
         </form>
+        <p class="thanks-text" id="thanks">Thanks for submitting!</p>
     </main>
 </body>
 </html>
